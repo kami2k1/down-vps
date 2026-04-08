@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đếm Ngược Ngày Máy Chủ Sập</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video id="bg-video" class="background-canvas" autoplay loop muted playsinline>
+        <source src="data/quang.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="glass-panel">
+            <div class="warning-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+            </div>
+            <h1 class="glitch-text" data-text="MÁY CHỦ NÀY SẼ ĐÓNG CỬA">MÁY CHỦ NÀY SẼ ĐÓNG CỬA</h1>
+            <div class="countdown-wrapper">
+                <div class="time-block">
+                    <span class="number" id="days">00</span>
+                    <span class="label">NGÀY</span>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-block">
+                    <span class="number" id="hours">00</span>
+                    <span class="label">GIỜ</span>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-block">
+                    <span class="number" id="minutes">00</span>
+                    <span class="label">PHÚT</span>
+                </div>
+                <div class="separator">:</div>
+                <div class="time-block">
+                    <span class="number" id="seconds">00</span>
+                    <span class="label">GIÂY</span>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="farewell-message">
+                <p>Máy chủ hoạt động từ 17/05/2025, kết thúc vào 17/05/2026.<br>Khi VPS này hết hạn cũng là lúc dự án khép lại, xin chia buồn cùng anh em!<br>Hiện tại admin không còn đủ thời gian để duy trì máy chủ nữa. Chân thành cảm ơn mọi người đã đồng hành.</p>
+                <p class="contact-info">
+                    <span class="info-block"><span class="value">PUBLIC IP:</span> <span class="label">103.78.0.204</span></span>
+                    <span class="divider">|</span>
+                    <span class="info-block"><span class="value">TELEGRAM:</span> <span class="label">@kami2k1</span></span>
+                    <span class="divider">|</span>
+                    <span class="info-block"><span class="value">GITHUB:</span> <span class="label">@kami2k1</span></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
